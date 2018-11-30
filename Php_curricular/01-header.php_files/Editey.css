@@ -1,0 +1,2336 @@
+@keyframes blink { 
+	0% {
+		opacity: 0.15;
+	}
+
+	50% {
+		opacity : 0.3;
+	}
+	
+	100% {
+		opacity : 0.15;
+	}
+}
+@keyframes anim-rotate { 
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform : rotate(360deg);
+	}
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src: url('fonts/icomoon.eot');
+	src: url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.woff') format('woff'), url('fonts/icomoon.ttf')
+		format('truetype'), url('fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.fsfe-Prompt {
+    font-weight: bold;
+    margin: 8px 0 4px 0;
+}
+
+.fse-TaskIndicator {
+	background-color: #333;
+	padding: 0;
+}
+
+.fse-TaskIndicator .fs-TaskIndicator-label {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 13px;
+	font-weight: 500;
+	font-style: normal;
+	color: #999;
+}
+
+.fse-Rotate .html-face {
+	animation: anim-rotate 2s infinite linear;
+	transform-origin-x: 13px;
+	transform-origin-y: 13px;
+}
+
+.fs-DialogBox .Caption {
+    color: #fff;
+    background-color: #333333;
+	padding: 11px 21px 10px;
+	cursor: move;
+	border-bottom: none;    
+}
+
+.fs-DialogCheckBox {
+	margin-bottom: 4px;
+}
+
+.fs-DialogCheckBox label {
+	position: relative;
+	left: 4px;
+	top: -2px;
+}
+
+.fse-FolderToolbar {
+	border-bottom: 1px solid #E0E0E0;
+	padding: 2px 5px 5px 8px;
+	background-color: #f5f5f5;
+}
+
+.fse-SelectedFolderIcon {
+	margin-left: 6px;
+	margin-right: 6px;
+	position: relative;
+	top: 1px;
+	color: #4D90FE;
+}
+
+.fse-SelectedFolderPanel {
+	background-color: #fafafa;
+	border-top: 1px solid #E0E0E0;
+	border-bottom: 1px solid #E0E0E0;
+	margin-bottom: 10px;
+	padding: 8px 5px 5px 16px;
+}
+
+.fse-SelectedPath {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+}
+
+.fs-DialogCheckbox {
+	left: -3px;
+	position: relative;
+	top: 5px;
+}
+
+.fs-DialogCheckbox label {
+	margin-left: 6px;
+	position: relative;
+	bottom: 2px;
+}
+
+.fse-ChangesImage {
+	margin-top: 3px;
+	border: 1px solid #eee;
+	border-radius: 20px;
+	margin-right: 8px;
+}
+
+.fse-ChangesLabel {
+	color: #666;
+	white-space: nowrap;
+	font-size: 12px;
+	margin-right: 8px;
+}
+
+.fse-EmbeddedCollaboratorPanel .fsc-ChatButton {
+	margin-right: -8px;
+	margin-top: 1px;
+	height: 26px;
+}
+
+.fse-DialogPrompt {
+	color: #333333;
+	font-weight: bold;
+	padding-left: 3px;
+	padding-top: 6px;
+	padding-bottom: 3px;
+}
+
+.fse-EmbeddedCollaboratorPanel {
+	margin-top: 1px;
+	margin-right: 51px;
+}
+
+.fse-CollaborationPointer {
+	position: absolute;
+	opacity: 0.65;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.fse-CollaborationPointerActor {
+	position: relative;
+	left: 6px;
+	top: 2px;
+	color: #ffffff;
+	padding: 2px;
+	font-family: arial;
+	font-size: 8px;
+	border-radius: 3px;
+}
+
+.fse-CollaborationCursor {
+	position: absolute;
+	border-left: 2px solid;
+}
+
+.fse-CollaborationCursorTop {
+	position: relative;
+}
+
+.fse-CollaborationCursorActor {
+	top: -20;
+	position: relative;
+	padding: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	font-family: arial;
+	font-size: 10px;
+	opacity: 1;
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-ms-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+.fse-CollaborationCursorActor-hidden, .fse-CollaborationPointer-hidden {
+	opacity: 0;
+}
+
+.fse-CollaborationSelection {
+	position: absolute;
+	opacity: 0.15;
+}
+
+.fse-CollaborationEditRegion {
+	position: absolute;
+	opacity: 0.1;
+}
+
+.fse-CollaborationEditRegion-active {
+	position: absolute;
+	opacity: 0.3;
+	animation: blink 1s;
+	animation-iteration-count: infinite;
+	-webkit-animation: blink 1s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+.fse-SyntaxError {
+	position: absolute;
+	background-image: url('syntaxError.png');
+	background-repeat: repeat-x;
+	background-position: left bottom;
+}
+
+.fse-Comment {
+	position: absolute;
+	background-color: #ff0;
+	opacity: 0.35;
+}
+
+.fse-CommentSelected {
+	position: absolute;
+	background-color: #ff9300;
+	opacity: 0.35;
+}
+
+.fse-CommentResolved {
+	position: absolute;
+	background-color: transparent;
+	pointer-events: none;
+}
+
+.fse-CommentAuthor {
+	font-weight: bold;
+	overflow: hidden;
+	white-space: nowrap;
+	max-width: 80px;
+}
+
+.fse-CommentPanelSelected .fse-CommentAuthor, .fse-CommentPanelSelected .fse-CommentContent,
+	.fse-CommentPanelSelected .fse-CommentDate, .fse-CommentPanelSelected .fse-CommentToolbar
+	{
+	background-color: #fcfac6;
+}
+
+.fse-CommentPanelSelected .fse-ReplyPanel .fse-CommentAuthor,
+	.fse-CommentPanelSelected .fse-ReplyPanel .fse-CommentContent,
+	.fse-CommentPanelSelected .fse-ReplyPanel .fse-CommentDate,
+	.fse-CommentPanelSelected .fse-ReplyPanel .fse-CommentToolbar,
+	.fse-CommentPanelSelected .fse-ReplyPanel .fse-CommentVerb {
+	background-color: #eff2f9;
+}
+
+.fse-CommentDate {
+	font-size: 10px;
+	color: #666;
+}
+
+.fse-CommentsScrollPanel .fse-CommentDate {
+	text-align: right;
+}
+
+.fse-CommentContent, .fse-CommentVerb {
+	color: #666;
+}
+
+.fse-CommentVerb {
+	font-style: italic;
+}
+
+.fse-CommentAuthorPhoto {
+	max-width: 32px;
+	max-height: 32px;
+	width: auto;
+	height: auto;
+}
+
+.fse-CommentsScrollPanel .fse-CommentAuthorPhoto {
+	max-width: 48px;
+	max-height: 48px;
+}
+
+.fse-CommentsScrollPanel .fse-ReplyPanel .fse-CommentAuthorPhoto {
+	max-width: 24px;
+	max-height: 24px;
+	padding-left: 22px;
+	padding-right: 6px;
+	padding-top: 6px;
+}
+
+.fse-CommentTextArea {
+	margin-bottom: 5px;
+	min-height: 38px;
+}
+
+.fse-CommentTextArea .gwt-TextArea {
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+	resize: none;
+	min-height: 38px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.fse-ResolvedComment {
+	-webkit-transform: scale(0.1, 0.1);
+	-moz-transform: scale(0.1, 0.1);
+	-o-transform: scale(0.1, 0.1);
+	transform: scale(0.1, 0.1);
+}
+
+.fse-ResolvedComment, .fse-SelectedComment, .fse-DefaultComment {
+	z-index: 2;
+}
+
+.fse-AnimatedComment {
+	-webkit-transition: top 0.5s ease-out, right 0.5s ease-out,
+		-webkit-transform 0.5s ease-out;
+	-moz-transition: top 0.5s ease-out, right 0.5s ease-out, -moz-transform
+		0.5s ease-out;
+	-o-transition: top 0.5s ease-out, right 0.5s ease-out, -o-transform 0.5s
+		ease-out;
+	transition: top 0.5s ease-out, right 0.5s ease-out, transform 0.5s
+		ease-out;
+}
+
+.fse-SelectedComment:after, .fse-SelectedComment:before {
+	border: solid transparent;
+	content: ' ';
+	height: 0;
+	left: -20px;
+	width: 0;
+	position: absolute;
+}
+
+.fse-SelectedComment:after {
+	border-width: 9px;
+	border-right-color: #fcfac6;
+	left: -17px;
+	top: 15px;
+}
+
+.fse-SelectedComment:before {
+	border-width: 11px;
+	border-right-color: #ffe572;
+	top: 13px;
+}
+
+.fse-CommentPanel {
+	background-color: #fafafa;
+	padding: 5px;
+	border: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    border-radius: 2px;
+}
+
+.fse-CommentsScrollPanel .fse-CommentPanel {
+	background-color: #fff;
+	border: 0px;
+	border-bottom: 1px solid #e5e5e5;
+	padding-bottom: 8px;
+	margin-bottom: 10px;
+}
+
+.fse-ReplyPanel {
+	border-top: 1px dashed #e5e5e5;
+	padding-top: 5px;
+}
+
+.fse-CommentController .fse-ReplyPanel {
+	border-top: none;
+	padding-top: 0px;
+	margin-top: 4px;
+}
+
+.fse-DefaultComment:hover .fse-CommentPanel {
+	background-color: #f6f6f6;
+}
+
+.fse-SelectedComment .fse-CommentPanel {
+	background-color: #fcfac6;
+	border: 1px solid #ffe572;
+}
+
+.fse-CommentButton {
+	margin-right: 6px;
+}
+
+.fse-CommentPanel a, .fse-CommentPanelSelected a {
+	color: #15c;
+	font-size: 11px;
+	margin: 0 2px;
+	text-decoration: none;
+}
+
+.fse-CommentPanel a:hover, .fse-CommentPanelSelected a:hover {
+	text-decoration: underline;
+}
+
+.fse-TableHeader {
+	font-weight: bold;
+	padding-top: 6px;
+}
+
+.fse-DomainVerificationSucceeded, .fse-DomainVerificationFailed {
+	padding-left: 16px;
+	padding-right: 16px;
+	font-weight: bold;
+	border: 1px solid #ccc;
+	background-color: #ffe0e0;
+	border-radius: 5px;
+	line-height: 18px;
+}
+
+.fse-DomainVerificationSucceeded {
+	background-color: #e0ffe0;
+}
+
+.fse-AlreadyPublished {
+	padding-top: 16px;
+	font-weight: bold;
+}
+
+.fs-DialogHelpText {
+    padding: 0 0 4px 0;
+}
+
+.fse-VerifyPrompt {
+    padding: 6px 0 2px 2px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.fse-VerificationError {
+	padding: 8px 0 0 2px;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.fse-ConnectionError {
+	color: #FF0000;
+	font-weight: bold;
+	padding-bottom: 16px
+}
+
+.fse-AlreadyPublished {
+	font-weigth: bold;
+}
+
+.fse-MatchesLabel {
+	color: #999;
+}
+
+.fse-SidebarToolbar {
+	background-color: #000;
+	height: 37px;
+}
+
+.fse-SidebarToolbar .gwt-Label {
+	color: white;
+	font-weight: bold;
+	font-size: 13px;
+	padding-left: 10px;
+}
+
+.fse-Sidebar {
+	background-color: white;
+	border-left: 1px solid #EBEBEB;
+}
+
+.fse-UpperPanel {
+	border-bottom: 1px solid #EBEBEB;
+}
+
+.fse-LowerPanel {
+	border-top: 1px solid #EBEBEB;	
+}
+
+.fse-RightPanel {
+	border-left: 1px solid #EBEBEB;
+}
+
+.fse-LeftPanel {
+	border-right: 1px solid #EBEBEB;
+}
+
+.fse-EditorTabPanel .fs-Toolbar {
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+    background: #f5f5f5
+}
+
+.fse-EditorTabPanel .fsc-MenuToolbar {
+    padding: 0;
+}
+
+.fse-EditorTabPanel .fsc-SaveLabel {
+    line-height: 0;
+    margin-left: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.fse-EditorTabPanel .fs-ToolbarSeparator, .fse-EditorTabPanel .fs-ToolbarDoubleSeparator {
+    height: 22px;
+    margin: 0 3px 0 2px;
+}
+
+.fse-EditorTabPanel .fs-ToolbarButton {
+    height: 18px;
+    margin: 1px 2px;
+    width: 18px;
+    min-width: 18px;
+}
+
+.fse-EditorTabPanel .fs-ToolbarButton .html-face {
+	padding: 2px;
+	font-size: 14px;
+} 
+
+.fse-TabImage {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 3px;
+}
+
+.fse-TabLabel {
+	margin-right: 4px;
+	margin-left: 4px;
+}
+
+.fse-TabButton {
+	margin-right: 4px;
+}
+
+.fse-OptionalTabButton {
+	display: none;
+}
+
+.fse-SaveLabel {
+	color: #6a6a6a;;
+	font-size: 13px;
+	line-height: 32px;
+}
+
+.fse-MimeTypeLabel {
+	border: 1px solid #B0B0B0;
+	border-radius: 3px 3px 3px 3px;
+	color: #999999;
+	height: 15px;
+	margin-top: 5px;
+	padding: 4px 3px 3px;
+}
+
+.fse-Tag {
+	color: #666666;
+	font-family: 'Ubuntu', sans-serif;
+	border: 1px solid #B0B0B0;
+	border-radius: 3px;
+	color: #333;
+	background-color: #FFFFE0;
+	padding: 2px 4px 2px 4px;
+	cursor: pointer;
+	margin-right: 4px;
+	margin-bottom: 3px;
+	max-width: 125px;
+	white-space: nowrap;
+}
+
+.fse-Tag .name {
+	font-size: 12px;
+	max-width: 100px;
+}
+
+.fse-Tag .value {
+	font-size: 10px;
+	color: #999;
+}
+
+.fse-PopularTagsTitle {
+	color: #333;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+	margin-left: 10px;
+}
+
+.fse-FileName {
+	font-size: 15px;
+	padding: 8px;
+	margin-right: 6px;
+	color: #222;
+	white-space: nowrap;
+}
+
+.fse-ResourcePanel {
+	margin: auto;
+	padding: 0px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	color: #666;
+	line-height: 16px;
+}
+
+.fse-DocumentName, .fse-WorkspaceName, .fse-ExampleName {
+	font-family: arial, sans-serif;
+	font-size: 18px;
+	color: #000;
+	line-height: 16px;
+	display: inline-block;
+	max-width: 99%;
+	outline: none;
+	margin-top: 5px;
+	padding: 5px;
+}
+
+.fse-WorkspaceName {
+	color: #666;
+}
+
+.fse-EditableDocumentName:hover {
+	background-color: #eee;
+	cursor: pointer;
+}
+
+.fse-Toolbar {
+	margin-top: 6px;
+}
+
+.fse-Icon {
+	margin-top: 5px;
+}
+
+.fse-Centered {
+	margin: auto;
+}
+
+.fse-InstallButton {
+	font-family: 'Ubuntu', sans-serif;
+	color: white;
+	font-weight: 500;
+	border: none;
+	display: inline-block;
+	font-size: 28px;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.fse-Content {
+	border-bottom: 1px solid #e4e4e4;
+}
+
+.fse-MenuBar .fs-MenuBar {
+	width: 100%;
+}
+
+.fse-InstallButton:hover {
+	color: #666;
+}
+
+.fse-ContentPanel {
+	background-color: #d4d4d4;
+	border: 3px solid #d4d4d4;
+	border-radius: 12px;
+}
+
+.fse-PanelLayout {
+	border: 1px solid white;
+	background-color: #e4e4e4;
+}
+
+.fse-WizardContent {
+	line-height: 18px;
+}
+
+.fse-WizardSection {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+	color: #000;
+}
+
+.fse-ResourcePanel h1, .fse-DocumentName h1, .fse-WizardContent h1 {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 20px;
+	color: #000;
+}
+
+.fse-ResourcePanel h2, .fse-DocumentName h2, .fse-WizardContent h2 {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 22px;
+	color: #999;
+}
+
+.fse-ToggleButton {
+	outline: none;
+	text-decoration: none;
+	padding: 5px 5px 2px;
+	margin-right: 8px;
+	border-radius: 2px;
+	cursor: default;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+	outline: 0;
+	background-color: #f5f5f5;
+	background-image: -webkit-linear-gradient(top, #fefefe, #f1f1f1);
+	background-image: -moz-linear-gradient(top, #fefefe, #f1f1f1);
+	background-image: -ms-linear-gradient(top, #fefefe, #f1f1f1);
+	background-image: -o-linear-gradient(top, #fefefe, #f1f1f1);
+	background-image: linear-gradient(top, #fefefe, #f1f1f1);
+	color: #000;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.fse-ToggleButton-up-hovering {
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+	background-color: #f8f8f8;
+	background-image: -webkit-linear-gradient(top, #fbfbfb, #f1f1f1);
+	background-image: -moz-linear-gradient(top, #fbfbfb, #f1f1f1);
+	background-image: -ms-linear-gradient(top, #fbfbfb, #f1f1f1);
+	background-image: -o-linear-gradient(top, #fbfbfb, #f1f1f1);
+	background-image: linear-gradient(top, #fbfbfb, #f1f1f1);
+	border: 1px solid #c6c6c6;
+	color: #333
+}
+
+.fse-ToggleButton:focus {
+	border: 1px solid #ccc;
+	color: #333
+}
+
+.fse-ToggleButton:active {
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1)
+}
+
+.fse-ToggleButton-down, .fse-ToggleButton-down-hovering {
+	background-color: #eaeaea;
+	background-image: -webkit-linear-gradient(top, #eaeaea, #f6f6f6);
+	background-image: -moz-linear-gradient(top, #eaeaea, #f6f6f6);
+	background-image: -ms-linear-gradient(top, #eaeaea, #f6f6f6);
+	background-image: -o-linear-gradient(top, #eaeaea, #f6f6f6);
+	background-image: linear-gradient(top, #eaeaea, #f6f6f6);
+	border-top: 1px solid #bbb;
+	border-left: 1px solid #bbb;
+}
+
+.fsce-TextBox, .fsce-NotesEditor {
+	padding: 0px;
+}
+
+.fse-DialogInput:focus, .fsce-TextBox:focus, .fsce-NotesEditor:focus {
+	border: 1px solid #C0C0C0;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+	outline: medium none;
+}
+
+.fs-TaskIndicator-label {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 13px;
+	font-weight: 500;
+	font-style: normal;
+	color: #999;
+}
+
+.fs-DialogContent p {
+	line-height: 1.5;
+}
+
+.fse-DialogContent {
+	padding: 0px;
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 20px;
+}
+
+.gwt-PopupPanelGlass {
+	z-index: 49;
+}
+
+.fse-GlassPanel {
+	background: white;
+	filter: alpha(opacity = 50);
+	opacity: .5;
+	z-index: 49;
+}
+
+.fse-DarkGlassPanel, .fse-GenerateGlassPanel {
+	background: #f9f9f9;
+	filter: alpha(opacity = 80);
+	opacity: .8;
+	z-index: 49;
+}
+
+.fse-GenerateGlassPanel {
+	border-bottom-left-radius: 8px;
+}
+
+.fse-TooltipTrigger:hover.fse-Tooltip, .fse-TooltipTrigger:hover .fse-Tooltip
+	{
+	opacity: 0.92;
+	visibility: visible;
+}
+
+.fse-Tooltip {
+	z-index: 2;
+	visibility: hidden;
+	color: #000;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	text-decoration: none;
+	text-transform: none;
+	text-align: left;
+	opacity: 0;
+	background-color: #fafafa;
+	position: absolute;
+	right: 8px;
+	border: 2px solid #000;
+	border-radius: 3px;
+	padding: 2px;
+	padding-left: 6px;
+	padding-right: 6px;
+	-webkit-transition: opacity 0.4s ease-in-out;
+	-moz-transition: opacity 0.4s ease-in-out;
+	-o-transition: opacity 0.4s ease-in-out;
+	transition: opacity 0.4s ease-in-out;
+	-moz-box-shadow: 0 0 3px #999;
+	-webkit-box-shadow: 0 0 3px #999;
+	box-shadow: 0 0 3px #999;
+	line-height: 22px;
+}
+
+.fse-Tooltip:after, .fse-Tooltip:before {
+	border: solid transparent;
+	content: ' ';
+	height: 0;
+	right: 35px;
+	width: 0;
+	position: absolute;
+}
+
+.fse-Tooltip:after {
+	border-width: 9px;
+	border-bottom-color: #fafafa;
+}
+
+.fse-Tooltip:before {
+	border-width: 11px;
+	border-bottom-color: #000;
+}
+
+.fse-TooltipBottom {
+	top: 44px;
+}
+
+.fse-TooltipBottom:after {
+	border-bottom-color: #fafafa;
+	top: -18px;
+}
+
+.fse-TooltipBottom:before {
+	top: -22px;
+	right: 33px;
+}
+
+.fse-TooltipBottomLeft {
+	left: 0px;
+}
+
+.fse-TooltipBottomLeft:before {
+	left: 32px;
+}
+
+.fse-TooltipBottomLeft:after {
+	left: 34px;
+}
+
+.fse-TooltipBottomRight {
+	
+}
+
+.fse-TooltipBottomRight:after {
+	right: 8px;
+}
+
+.fse-TooltipBottomRight:before {
+	right: 6px;
+}
+
+.fse-Thumbnail {
+	max-width: 32px;
+	max-height: 32px;
+}
+
+.fse-HintPanel td {
+	color: #a0a0a0;
+	font-family: Ubuntu, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	height: 30px;
+}
+
+.fse-HintText {
+	white-space: nowrap;
+	padding-bottom: 5px;
+}
+
+.fse-ToolbarWrapper {
+	background: none;
+	-webkit-box-shadow: inset 0 1px 0 0 #fff;
+	-moz-box-shadow: inset 0 1px 0 0 #fff;
+	box-shadow: inset 0 1px 0 0 #fff;
+	background-color: #f5f5f5;
+	background-image: -webkit-linear-gradient(top, #f5f5f5, #eee);
+	background-image: -moz-linear-gradient(top, #f5f5f5, #eee);
+	background-image: -ms-linear-gradient(top, #f5f5f5, #eee);
+	background-image: -o-linear-gradient(top, #f5f5f5, #eee);
+	background-image: linear-gradient(top, #f5f5f5, #eee);
+	border-top: 1px solid #d9d9d9;
+	border-bottom: 1px solid #d9d9d9;
+	padding: 0 44px 0 44px;
+	position: relative;
+}
+
+.fse-ToolbarWrapper-embedded .fsc-DocumentName {
+	font-size: 16px;
+	margin-top: 0px;
+}
+
+.fse-ToolbarWrapper-embedded {
+	padding: 0 4px 0 0;
+}
+
+.fse-ToolbarWrapper-noinfo {
+	padding: 0 4px 0 0px;
+}
+
+.fse-ToolbarButton {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	background: 0;
+	border-color: transparent;
+	border-style: solid;
+	border-width: 1px;
+	outline: none;
+	padding: 0;
+	color: #333;
+	line-height: 24px;
+	list-style: none;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+	vertical-align: middle;
+	cursor: default;
+	height: 25px;
+	min-width: 25px;
+	padding: 0;
+	text-align: center;
+	margin-top: 0px;
+	margin-left: 5px;
+}
+
+.fse-FontIcon, .fse-ToolbarButton .html-face, .fse-MenuIcon,
+	.fse-TabController, .fse-TabButton, .fse-CollaborationPointerMouse,
+	.fse-IconButton, .fse-TableIcon, .fse-SelectedFolderIcon,
+	.fse-DriveIcon, .fse-EditorIcon, .fse-WorkspaceIcon, .fse-MimeTypeIcon,
+	.fse-SubmenuIcon {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	font-size: 16px;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+.fse-SubmenuIcon {
+	border-radius: 2px 2px 2px 2px;
+	color: #FFFFFF;
+	float: left;
+	font-size: 12px;
+	height: 12px;
+	margin-right: 10px;
+	padding: 2px;
+	width: 12px;
+}
+
+.fse-EditorIcon, .fse-DriveIcon, .fse-WorkspaceIcon {
+	color: #fff;
+	font-size: 24px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.fse-MimeTypeIcon {
+    color: #000000;
+    font-size: 16px;
+    height: 14px;
+    padding: 5px;
+    position: relative;
+    text-align: center;
+    width: 16px;
+}
+
+.fse-WorkspaceIcon {
+	font-size: 34px;
+}
+
+.fse-TableIcon {
+	color: #999;
+}
+
+.fse-IconButton .html-face {
+	margin-top: 6px;
+}
+
+.fse-SearchBox {
+	border-right: 0px;
+	border-radius: 3px 0px 0px 3px;
+}
+
+.fse-CollaborationPointerMouse {
+	text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.fse-TabController {
+	top: 10px; */
+    transition: all 0.2s ease-out;
+    padding: 4px;
+    color: #999;
+}
+
+.fse-TabController:hover {
+	color: #333;
+}
+
+.fse-TabController.disabled, .fse-TabController.disabled:hover {
+    color: #d5d5d5;
+}
+
+.fse-ToolbarButton .html-face {
+	padding-top: 5px;
+}
+
+.fse-MenuIcon {
+	float: left;
+	padding-top: 0px;
+	margin-left: -22px;
+	margin-top: -1px;
+}
+
+.fse-TabButton {
+	opacity: 0.3;
+	transition: all 0.2s ease-out;
+}
+
+.fse-TabButton:hover {
+	opacity: 1;
+}
+
+.fse-ToolbarButton img {
+	margin: 3px;
+}
+
+.fse-ToolbarButton:hover, .fse-ToolbarButton:active {
+	color: #222;
+	padding: 0
+}
+
+.fse-ToolbarButton:hover {
+	border-color: #c6c6c6 !important;
+	color: #222
+}
+
+.fse-ToolbarButton:hover {
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+	background-color: #f8f8f8;
+	background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+	background-image: -moz-linear-gradient(top, #f8f8f8, #f1f1f1);
+	background-image: -ms-linear-gradient(top, #f8f8f8, #f1f1f1);
+	background-image: -o-linear-gradient(top, #f8f8f8, #f1f1f1);
+	background-image: linear-gradient(top, #f8f8f8, #f1f1f1)
+}
+
+.fse-ToolbarButton:active {
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+	background-color: #f6f6f6;
+	background-image: -webkit-linear-gradient(top, #f6f6f6, #f1f1f1);
+	background-image: -moz-linear-gradient(top, #f6f6f6, #f1f1f1);
+	background-image: -ms-linear-gradient(top, #f6f6f6, #f1f1f1);
+	background-image: -o-linear-gradient(top, #f6f6f6, #f1f1f1);
+	background-image: linear-gradient(top, #f6f6f6, #f1f1f1);
+	border-color: #c6c6c6
+}
+
+.fse-ToolbarButton-down-hovering {
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+	background-color: #eee;
+	background-image: -webkit-linear-gradient(top, #eee, #e0e0e0);
+	background-image: -moz-linear-gradient(top, #eee, #e0e0e0);
+	background-image: -ms-linear-gradient(top, #eee, #e0e0e0);
+	background-image: -o-linear-gradient(top, #eee, #e0e0e0);
+	background-image: linear-gradient(top, #eee, #e0e0e0);
+	border-color: #ccc
+}
+
+.fse-ToolbarButton-disabled {
+	color: #222 !important;
+	opacity: 0.3;
+	filter: alpha(opacity =                   30)
+}
+
+.fse-ToolbarButton-up-disabled {
+	color: #222 !important;
+	opacity: 0.3;
+	filter: alpha(opacity =                   30)
+}
+
+.bottom {
+	border-bottom: 1px solid #EBEBEB;
+}
+
+.fse-EditorsMenuBar .gwt-MenuItem-opened {
+	padding-bottom: 6px;
+}
+
+.fs-ButtonDefault .html-face {
+	white-space: nowrap;
+}
+
+.fs-ButtonRight {
+	margin-right: 0px;
+}
+
+.fs-DialogPrompt {
+	font-weight: bolder;
+	padding: 10px 0 4px 0;
+}
+
+.fse-AutoUpdatePrompt {
+	padding-top: 10px;
+	font-weight: bolder;
+	color: #666;
+}
+
+.fs-CopyPasteBox {
+	font-family: 'Courier New', Courier, monospace;
+    border-radius: 3px;
+    border: 1px dashed #d9d9d9;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+div.CSS_SHORTCUTS_HELP_POPUP {
+	left: 10%;
+	width: 80%;
+	top: 10%;
+	z-index: 1002;
+	color: #fff;
+	position: fixed;
+	text-align: center;
+	text-shadow: #000 1px 1px 7px;
+	font-weight: bold;
+	background: #000 none repeat scroll 0;
+	overflow: hidden
+}
+
+@media print {
+	div.CSS_SHORTCUTS_HELP_POPUP {
+		display: none !important
+	}
+}
+
+div.CSS_SHORTCUTS_HELP_POPUP div.popupContent {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	max-height: inherit;
+	overflow: auto;
+	padding: 1em
+}
+
+table.CSS_SHORTCUTS_HELP_POPUP_HEADER, table.CSS_SHORTCUTS_HELP_POPUP_CONTENT
+	{
+	width: 100%
+}
+
+.CSS_SHORTCUTS_HELP_POPUP_HEADER_TABLE_ELEMENT {
+	padding-bottom: 0.8ex
+}
+
+.CSS_SHORTCUTS_HELP_POPUP_TITLE {
+	font-size: 15px;
+	white-space: nowrap;
+	text-align: left
+}
+
+.CSS_SHORTCUTS_HELP_POPUP_TEAROFF_LINK_CONTAINER {
+	color: #dd0;
+	text-align: right
+}
+
+.CSS_SHORTCUTS_HELP_POPUP_TEAROFF_LINK {
+	font-size: 15px;
+	cursor: pointer;
+	text-decoration: underline;
+	color: #dd0
+}
+
+table.CSS_SHORTCUTS_HELP_POPUP_CONTENT {
+	border-top: 1px solid #999;
+	font-size: 13px
+}
+
+.CSS_SHORTCUTS_HELP_POPUP_CONTENT_HEADER {
+	color: #dd0;
+	padding-top: 1em;
+	text-align: left
+}
+
+.CSS_SHORTCUTS_HELP_POPUP_CONTENT_ELEMENT {
+	vertical-align: top;
+	padding-top: 0.15em
+}
+
+table.CSS_SHORTCUTS_HELP_POPUP_CONTENT td.CSS_SHORTCUTS_HELP_POPUP_KEY {
+	font-weight: bold;
+	padding-right: 0.5em;
+	text-align: right;
+	white-space: nowrap
+}
+
+table.CSS_SHORTCUTS_HELP_POPUP_CONTENT td.CSS_SHORTCUTS_HELP_POPUP_DESCRIPTION
+	{
+	font-weight: normal;
+	text-align: left
+}
+
+span.CSS_SHORTCUTS_HELP_POPUP_AUXILIARY_WORD {
+	font-weight: normal;
+	font-size: 11px
+}
+
+span.CSS_SHORTCUTS_HELP_POPUP_KEY_MNEMONIC {
+	font-family: "Courier New";
+	color: #dd0
+}
+
+.CSS_SHORTCUTS_HELP_POPUP_PREF_CONTAINER {
+	border-top: 1px solid #999;
+	padding: .5em 0
+}
+
+.CSS_SHORTCUTS_HELP_POPUP_PREF_CONTENT {
+	background: #dd0;
+	color: #000;
+	padding: 3px 7px;
+	text-align: left;
+	font-size: 13px;
+	text-shadow: none
+}
+
+.CSS_SHORTCUTS_HELP_POPUP_PREF_ENABLED .CSS_SHORTCUTS_HELP_POPUP_PREF_CONTENT
+	{
+	background: none;
+	color: #fff
+}
+
+.CSS_SHORTCUTS_HELP_POPUP_PREF_LINK {
+	cursor: pointer;
+	text-decoration: underline
+}
+
+.CSS_SHORTCUTS_HELP_POPUP_PREF_ENABLED .CSS_SHORTCUTS_HELP_POPUP_PREF_LINK
+	{
+	color: #dd0
+}
+
+.ace_gutter-layer {
+	width: 41px !important;
+}
+
+.ace_gutter-cell {
+	padding-left: 0px !important;
+}
+
+.fse-LicenseDialog {
+	background-image: url("/editey/about.png");
+	background-repeat: no-repeat;
+	padding: 100px 20px 120px;
+}
+
+.fse-License,.fse-LicenseProperty {
+	padding-left: 105px;
+	font-size: 15;
+	color: #333;
+}
+
+.fse-LicenseProperty,.fse-LicenseValue {
+	font-size: 11px;
+}
+
+.fs-ToolbarButton .fs-ShoppingCart {
+	margin: 0 0 6px 0;
+}
+
+.fs-ToolbarButton .fs-ShoppingCart .html-face {
+	padding: 3px 4px 0 4px;
+}
+
+.fsc-SidebarRight {
+    border-left: none;
+}
+
+/* Tomorrow theme */
+.fs-TomorrowTheme .fse-TabButton {
+    transition: all 0s ease-out;
+    font-size: 13px;
+}
+
+.fs-TomorrowTheme .fsc-CollaboratorsPanel .fse-TomorrowTheme table {
+    background-color: #f5f5f5;
+}
+
+.fs-SolaziredTheme .fs-Toolbar .fsc-CollaboratorsPanel {
+	background: #f5f5f5;
+}
+
+.fs-TomorrowTheme .fs-Toolbar .fsc-ChatButton {
+	transition: background-color 0s ease-in-out;
+	border: solid 1px #f5f5f5;
+}
+
+.fs-TomorrowTheme .fs-Toolbar .fsc-ChatButton:hover {
+	background-color: none;	
+	background-image: none;
+	border: solid 1px #c6c6c6;	
+}
+
+.fs-TomorrowTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tabInner .fse-TabLabel {
+    color: #666;
+    font-size: 13px;
+}
+
+.fs-TomorrowTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tabInner .fse-TabLabel:hover {
+    color: #000;
+}
+
+.fs-TomorrowTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tab.com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-selected .fse-TabLabel {
+    color: #000;
+}
+
+.fs-TomorrowTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tab.com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-selected .fse-TabLabel:hover {
+    color: #666;
+}
+
+.fs-TomorrowTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tab.com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-selected {
+    background-color: #fff;
+}
+
+.fs-TomorrowTheme .gwt-MenuItem-selected:hover {
+	background-color: #f5f5f5;
+}
+
+/* Solazired theme */
+.fs-SolaziredTheme {
+    background: #fdf6e3;
+}
+
+.fs-SolaziredTheme ::-webkit-scrollbar { width: 6px; height: 6px;}
+.fs-SolaziredTheme ::-webkit-scrollbar-button {  width: 0px; height: 0px; }
+.fs-SolaziredTheme ::-webkit-scrollbar-thumb { background-color: #EEE8D5; }
+.fs-SolaziredTheme ::-webkit-scrollbar-track-piece { background-color: #fdf6e3;}
+
+.fs-SolaziredTheme .fsc-MeDomainPanel {
+	border: 1px solid #d9d9d9;;
+}
+
+.fs-SolaziredTheme .fsc-MenuToolbar, .fs-SolaziredTheme .fs-Toolbar {
+    background: #fdf6e3;
+	border-color: #999;
+    box-shadow: none;	
+}
+
+.fs-SolaziredTheme .fse-EditorTabPanel .fsc-MenuToolbar, .fs-SolaziredTheme .fse-EditorTabPanel .fs-Toolbar {
+    background: #fdf6e3;
+	border-color: #999;
+    box-shadow: none;	
+}
+
+.fs-SolaziredTheme .fs-ToolbarDoubleSeparator, .fs-SolaziredTheme .fs-ToolbarSeparator  {
+	border-color: #d9d9d9;
+}
+
+.fs-SolaziredTheme .ace_editor {
+    border: none;
+}
+
+.fs-SolaziredTheme .gwt-MenuBar-horizontal {
+	z-index: 9;
+}
+
+.fs-TomorrowTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tab.com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-selected {
+    background-color: #f5f5f5;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+}
+
+.fs-SolaziredTheme .fs-Toolbar .fsc-CollaboratorsPanel {
+	background: #fbf1d1;
+}
+
+.fs-SolaziredTheme .fsc-CollaboratorPanel, .fs-SolaziredTheme .fsc-ChatButton {
+	border-color: #fdf6e3;
+    background-color: #fbf1d1;
+    color: #999;
+}
+
+.fs-SolaziredTheme .fs-Toolbar .fsc-ChatButton {
+	background-color: #fbf1d1;	
+	border-color: #fbf1d1;
+	color: #1c89d4;
+	transition: background-color 0s ease-in-out;
+}
+
+.fs-SolaziredTheme .fs-Toolbar .fsc-ChatButton:hover {
+	background-color: none;	
+	background-image: none;
+	color: #c8225e;
+}
+
+.fs-SolaziredTheme .fsc-DocumentName {
+	color: #439892;
+}
+
+.fs-SolaziredTheme .fsc-EditableDocumentName:hover {
+    background-color: #fbf1d1;
+    color: #333;
+}
+
+.fs-SolaziredTheme .fs-ToolbarButton {
+	color: #1c89d4;
+}
+
+.fs-SolaziredTheme .fs-ToolbarButton:hover {
+	background: #fdf6e3;
+    border-color: #ccc !important;
+    color: #c8225e;
+    box-shadow: none;
+}
+
+.fs-SolaziredTheme .fs-ToolbarButton-up-disabled {
+    color: #777 !important;
+}
+
+.fs-SolaziredTheme .fs-ToolbarButton-up-disabled:hover {
+	border-color: #999 !important;
+	color: #ccc;
+}
+
+.fs-SolaziredTheme .fsc-MenuToolbar, .fs-SolaziredTheme .fs-Toolbar {
+    background: #fbf1d1;
+	border-color: #EEE8D5;
+    box-shadow: none;	
+}
+
+.fs-SolaziredTheme .fse-EditorTabPanel .fsc-MenuToolbar, .fs-SolaziredTheme .fse-EditorTabPanel .fs-Toolbar {
+    background: #fbf1d1;
+	border-color: #EEE8D5;
+    box-shadow: none;	
+}
+
+.fs-SolaziredTheme .fsc-AppIcon {
+	opacity: 0.9;
+}
+
+.fs-SolaziredTheme .gwt-MenuItem {
+	background-color: #fdf6e3;
+	color: #999;	
+}
+
+.fs-SolaziredTheme .gwt-MenuBar-vertical .gwt-MenuItem {
+	background-color: #fbf1d1;
+	color: #333;
+}
+
+.fs-SolaziredTheme .gwt-MenuBar-vertical .gwt-MenuItem-selected, .fs-SolaziredTheme .gwt-MenuBar-vertical .subMenuIcon-selected {
+	background-color: #EEE8D5;
+	color: #999;
+}
+
+.fs-SolaziredTheme .gwt-MenuBar-vertical .gwt-MenuItem-selected:hover {
+	color: #333;
+}	
+	
+.fs-SolaziredTheme .gwt-MenuItem-selected {
+	background-color: #fbf1d1;
+	color: #333;	
+	border-color: #fbf1d1;
+}
+
+.fs-SolaziredTheme .gwt-MenuItem-selected .subMenuIcon-selected {
+	background-color: #333;
+	background: #333;
+}
+
+.fs-SolaziredTheme .gwt-MenuBarPopup {
+	background-color: #fbf1d1;
+	color: #aaa;
+	border-color: #fbf1d1;
+    z-index: 1000;
+}
+
+.fs-SolaziredTheme .gwt-MenuItemSeparator {
+	border-color: #999;
+	background-color: #fbf1d1;
+}
+
+.fs-SolaziredTheme .gwt-MenuItemSeparator .menuSeparatorInner {
+	border-color: #d9d9d9;
+}
+
+.fs-SolaziredTheme .fse-TabButton .html-face {
+    font-size: 13px;
+    color: #c1c1c1;
+}
+
+.fs-SolaziredTheme .fse-TabButton-up .html-face {
+    font-size: 13px;
+    color: #666;
+}
+
+.fs-SolaziredTheme .fse-TabButton:hover {
+    transition: all 0.1s ease-out;
+}
+
+.fs-SolaziredTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tabs {
+	border: none;	
+}
+
+.fs-SolaziredTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tab.com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-selected {
+	background: #fbf1d1;
+	border-left: 1px solid #EEE8D5;
+	border-right: 1px solid #EEE8D5;
+}
+
+.fs-SolaziredTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tab.com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-selected .fse-TabLabel {
+	color: #333;
+}
+
+.fs-SolaziredTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tab.com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-selected .fse-TabLabel:hover {
+	color: #999;
+}
+
+.fs-SolaziredTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tabInner .fse-TabLabel {
+    color: #439892;
+    font-size: 13px;
+}
+
+.fs-SolaziredTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tabInner .fse-TabLabel:hover {
+    color: #222;
+    font-size: 13px;
+}
+
+.fs-SolaziredTheme .fse-MimeTypeIcon {
+	color: #222;
+}
+
+.fs-SolaziredTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tab .fse-MimeTypeIcon {
+    opacity: 0.2;
+}
+
+.fs-SolaziredTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-selected .fse-MimeTypeIcon {
+    opacity: 1;
+}
+
+.fs-SolaziredTheme .fse-TabController.disabled {
+	color: #999;
+}
+
+/* Textmate theme */
+.fs-TextmateTheme {
+    background: #fff;
+}
+
+.fs-TextmateTheme .gwt-MenuBar-horizontal {
+	z-index: 9;
+}
+
+.fs-TextmateTheme .fsc-DocumentName {
+	color: #333;
+}
+
+.fs-TextmateTheme .fsc-EditableDocumentName:hover {
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+.fs-TextmateTheme .fs-ToolbarButton:hover {
+	border-color: #ccc !important;
+	color: #333;
+}
+
+.fs-TextmateTheme .fs-ToolbarButton-up-disabled {
+    color: #777 !important;
+}
+
+.fs-TextmateTheme .fs-ToolbarButton-up-disabled:hover {
+	border-color: #999 !important;
+	color: #ccc;
+}
+
+.fs-TextmateTheme .fsc-AppIcon {
+	opacity: 1;
+}
+
+.fs-TextmateTheme .gwt-MenuItem {
+	background-color: #fff;
+	color: #999;	
+}
+
+.fs-TextmateTheme .gwt-MenuBar-vertical .gwt-MenuItem {
+	background-color: #f3f3f3;
+	color: #999;
+}
+
+.fs-TextmateTheme .gwt-MenuBar-vertical .gwt-MenuItem-selected {
+	background-color: #f3f3f3;
+	color: #999;
+}
+
+.fs-TextmateTheme .gwt-MenuBar-vertical .gwt-MenuItem-selected:hover {
+	color: #333;
+}	
+	
+.fs-TextmateTheme .gwt-MenuItem-selected {
+	background-color: #f3f3f3;
+	color: #333;	
+	border-color: #f3f3f3;
+}
+
+.fs-TextmateTheme .gwt-MenuItem-selected .subMenuIcon-selected {
+	background-color: #333;
+	background: #333;
+}
+
+.fs-TextmateTheme .gwt-MenuBarPopup {
+	background-color: #f3f3f3;
+	color: #aaa;
+	border-color: #f3f3f3;
+    z-index: 1000;
+}
+
+.fs-TextmateTheme .gwt-MenuItemSeparator {
+	border-color: #999;
+	background-color: #f3f3f3;
+}
+
+.fs-TextmateTheme .gwt-MenuItemSeparator .menuSeparatorInner {
+	border-color: #ccc;
+}
+
+.fs-TextmateTheme .fse-TabButton .html-face {
+    font-size: 13px;
+    color: #c1c1c1;
+}
+
+.fs-TextmateTheme .fse-TabButton-up .html-face {
+    font-size: 13px;
+    color: #666;
+}
+
+.fs-TextmateTheme .fse-TabButton:hover {
+    transition: all 0.1s ease-out;
+}
+
+.fs-TextmateTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tabs {
+	border: none;	
+}
+
+.fs-TextmateTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tab.com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-selected {
+	background: #fff;
+}
+
+.fs-TextmateTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tab.com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-selected .fse-TabLabel {
+	color: #333;
+}
+
+.fs-TextmateTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tab.com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-selected .fse-TabLabel:hover {
+	color: #999;
+}
+
+.fs-TextmateTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tabInner .fse-TabLabel {
+    color: #999;
+    font-size: 13px;
+}
+
+.fs-TextmateTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tabInner .fse-TabLabel:hover {
+    color: #787878;
+    font-size: 13px;
+}
+
+.fs-TextmateTheme .fse-MimeTypeIcon {
+	color: #222;
+}
+
+.fs-TextmateTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tab .fse-MimeTypeIcon {
+    opacity: 0.2;
+}
+
+.fs-TextmateTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-selected .fse-MimeTypeIcon {
+    opacity: 1;
+}
+
+.fs-TextmateTheme .fse-EditorTabPanel table {
+	border: none;
+}
+
+.fs-TextmateTheme .fse-TabController.disabled {
+	color: #999;
+}
+
+/* Chaos theme */
+.fs-ChaosTheme {
+    background: #161616;
+}
+
+.fs-ChaosTheme .fsc-MeDomainPanel {
+	border: 1px solid #343434;;
+}
+
+.fs-ChaosTheme ::-webkit-scrollbar { width: 6px; height: 6px;}
+.fs-ChaosTheme ::-webkit-scrollbar-button {  width: 0px; height: 0px; }
+.fs-ChaosTheme ::-webkit-scrollbar-thumb { background-color: #333; }
+.fs-ChaosTheme ::-webkit-scrollbar-track-piece { background-color: #161616;}
+
+.fs-ChaosTheme .gwt-MenuBar-horizontal {
+	z-index: 9;
+}
+
+.fs-ChaosTheme .fsc-CollaboratorPanel, .fs-ChaosTheme .fsc-ChatButton {
+	background-color: #555;
+}
+
+.fs-ChaosTheme .fs-Toolbar .fsc-ChatButton {
+	background-color: #161616;	
+	border-color: #161616;
+	color: #999;
+	transition: background-color 0s ease-in-out;
+}
+
+.fs-ChaosTheme .fs-Toolbar .fsc-ChatButton:hover {
+	background-color: #333;	
+	border-color: #333 !important;
+	background-image: none;
+}
+
+.fs-ChaosTheme .fsc-DocumentName {
+	color: #999;
+}
+
+.fs-ChaosTheme .fsc-EditableDocumentName:hover {
+    background-color: #333;
+}
+
+.fs-ChaosTheme .fsc-MenuToolbar, .fs-ChaosTheme .fs-Toolbar {
+    background: #161616;
+	border-color: #343434;
+    box-shadow: none;	
+}
+
+.fs-ChaosTheme .fse-EditorTabPanel .fsc-MenuToolbar, .fs-ChaosTheme .fse-EditorTabPanel .fs-Toolbar {
+    background: #161616;
+	border-color: #343434;
+    box-shadow: none;	
+}
+
+.fs-ChaosTheme .fs-ToolbarDoubleSeparator, .fs-ChaosTheme .fs-ToolbarSeparator  {
+	border-color: #343434;
+}
+
+.fs-ChaosTheme .fs-ToolbarButton {
+	color: #999;
+}
+
+.fs-ChaosTheme .fs-ToolbarButton:hover {
+	background: #333;
+	border-color: #333 !important;
+}
+
+.fs-ChaosTheme .fs-ToolbarButton-up-disabled {
+    color: #777 !important;
+}
+
+.fs-ChaosTheme .fs-ToolbarButton-up-disabled:hover {
+	background: #333;
+	border-color: #333 !important;
+}
+
+.fs-ChaosTheme .fsc-AppIcon {
+	opacity: 0.5;
+}
+
+.fs-ChaosTheme .fse-UpperPanel, .fs-DarkTheme .fse-LowerPanel, .fs-ChaosTheme .fse-RightPanel, .fs-ChaosTheme .fse-LeftPanel {
+	border-color: #363636;
+}
+
+.fs-ChaosTheme .ace_editor {
+    border: none;
+}
+
+.fs-ChaosTheme .gwt-MenuItem {
+	background-color: #161616;
+	color: #999;	
+}
+
+.fs-ChaosTheme .gwt-MenuBar-vertical .gwt-MenuItem {
+	background-color: #333;
+	color: #999;
+}
+
+.fs-ChaosTheme .gwt-MenuBar-vertical .gwt-MenuItem-selected {
+	background-color: #333;
+	color: #999;
+}
+
+.fs-ChaosTheme .gwt-MenuBar-vertical .gwt-MenuItem-selected:hover {
+	color: #c2c2c2;
+}	
+	
+.fs-ChaosTheme .gwt-MenuItem-selected {
+	background-color: #333;
+	color: #999;	
+	border-color: #333;
+}
+
+.fs-ChaosTheme .gwt-MenuItem-selected .subMenuIcon-selected {
+	background-color: #333;
+	background: #333;
+}
+
+.fs-ChaosTheme .gwt-MenuBarPopup {
+	background-color: #333;
+	color: #aaa;
+	border-color: #333;
+    z-index: 1000;
+}
+
+.fs-ChaosTheme .gwt-MenuItemSeparator {
+	border-color: #343434;
+	background-color: #333;
+}
+
+.fs-ChaosTheme .gwt-MenuItemSeparator .menuSeparatorInner {
+	border-color: #444;
+}
+
+.fs-ChaosTheme .fse-TabButton .html-face {
+    font-size: 13px;
+    color: #999;
+}
+
+.fs-ChaosTheme .fse-TabButton-up .html-face {
+    font-size: 13px;
+    color: #ccc;
+}
+
+.fs-ChaosTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tabs {
+	border: none;	
+}
+
+.fs-ChaosTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tab.com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-selected {
+	background: #161616;
+}
+
+.fs-ChaosTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tab.com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-selected .fse-TabLabel {
+	color: #999;
+}
+
+.fs-ChaosTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tabInner .fse-TabLabel {
+    color: #444;
+    font-size: 13px;
+}
+
+.fs-ChaosTheme .fse-MimeTypeIcon {
+	color: #999;
+}
+
+.fs-ChaosTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tab .fse-MimeTypeIcon {
+    opacity: 0.2;
+}
+
+.fs-ChaosTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-selected .fse-MimeTypeIcon {
+    opacity: 1;
+}
+
+.fs-ChaosTheme .fse-EditorTabPanel table {
+	border: none;
+}
+
+.fs-ChaosTheme .fse-TabController.disabled {
+	color: #4d4d4d;
+}
+
+.fs-ChaosTheme .fsc-ShareButton {
+    background-color: #3865b2;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#3865b2), to(#3460a8));
+    background-image: -webkit-linear-gradient(top, #3865b2, #3460a8);
+    background-image: -moz-linear-gradient(top, #3865b2, #3460a8);
+    background-image: -ms-linear-gradient(top, #3865b2, #3460a8);
+    background-image: -o-linear-gradient(top, #3865b2, #3460a8);
+    background-image: linear-gradient(top, #3865b2, #3460a8);
+    color: #b9b9b9;
+}
+
+
+/* Dark Theme */
+.fs-DarkTheme {
+    background: #2C2828;
+}
+
+.fs-DarkTheme .fsc-MeDomainPanel {
+	border: 1px solid #494949;
+}
+
+.fs-DarkTheme ::-webkit-scrollbar { width: 6px; height: 6px;}
+.fs-DarkTheme ::-webkit-scrollbar-button {  width: 0px; height: 0px; }
+.fs-DarkTheme ::-webkit-scrollbar-thumb { background-color: #585356; }
+.fs-DarkTheme ::-webkit-scrollbar-track-piece { background-color: #2C2828;}
+
+.fs-DarkTheme .gwt-MenuBar-horizontal {
+	z-index: 9;
+}
+
+.fs-DarkTheme .fsc-CollaboratorPanel, .fs-DarkTheme .fsc-ChatButton {
+	opacity: 0.25;
+	margin-right: 4px;
+}
+
+.fs-DarkTheme .fs-Toolbar .fsc-ChatButton {
+	background-color: #353030;	
+	border-color: #353030;
+	color: #797579;
+	transition: background-color 0s ease-in-out;
+	opacity: 1;
+}
+
+.fs-DarkTheme .fs-Toolbar .fsc-ChatButton:hover {
+    background-color: #585356;
+    border-color: #585356 !important;
+    background-image: none;
+}
+
+.fs-DarkTheme .fsc-DocumentName {
+	color: #797579;
+}
+
+.fs-DarkTheme .fsc-EditableDocumentName:hover {
+    background-color: #585356;
+}
+
+.fs-DarkTheme .fsc-MenuToolbar, .fs-DarkTheme .fs-Toolbar {
+    background: #353030;
+    border-color: #393939;
+    box-shadow: none;	
+}
+
+.fs-DarkTheme .fs-ToolbarDoubleSeparator, .fs-DarkTheme .fs-ToolbarSeparator {
+	border-color: #424147;
+}
+
+.fs-DarkTheme .fs-ToolbarButton {
+	color: #797579;
+}
+
+.fs-DarkTheme .fs-ToolbarButton:hover {
+	background: #585356;
+	border-color: #585356 !important;
+}
+
+.fs-DarkTheme .fs-ToolbarButton-up-disabled {
+    color: #777 !important;
+}
+
+.fs-DarkTheme .fs-ToolbarButton-up-disabled:hover {
+	background: #111;
+	border-color: #111 !important;
+}
+
+.fs-DarkTheme .fsc-AppIcon {
+	opacity: 0.5;
+}
+
+.fs-DarkTheme .fse-MimeTypeIcon {
+	color: #797579;
+}
+
+.fs-DarkTheme .fse-UpperPanel, .fs-DarkTheme .fse-LowerPanel, .fs-DarkTheme .fse-RightPanel,.fs-DarkTheme .fse-LeftPanel {
+	border-color: #363636;
+}
+
+.fs-DarkTheme .ace_editor {
+    border: none;
+}
+
+.fs-DarkTheme .gwt-MenuItem {
+	background-color: #2C2828;
+	color: #797579;	
+}
+
+.fs-DarkTheme .gwt-MenuBar-vertical .gwt-MenuItem {
+	background-color: #3e393a;
+	color: #999;
+}
+
+.fs-DarkTheme .gwt-MenuBar-vertical .gwt-MenuItem-selected {
+	background-color: #3e393a;
+	color: #797579;
+}
+
+.fs-DarkTheme .gwt-MenuBar-vertical .gwt-MenuItem-selected:hover {
+	color: #c2c2c2;
+}	
+	
+.fs-DarkTheme .gwt-MenuItem-selected {
+	background-color: #3e393a;
+	color: #999;	
+	border-color: #3e393a;
+}
+
+.fs-DarkTheme .gwt-MenuItem-selected .subMenuIcon-selected {
+	background-color: #3e393a;
+	background: #3e393a;
+}
+
+.fs-DarkTheme .gwt-MenuBarPopup {
+	background-color: #3e393a;
+	color: #aaa;
+	border-color: #3e393a;
+    z-index: 1000;
+}
+
+.fs-DarkTheme .gwt-MenuItemSeparator {
+	border-color: #666;
+	background-color: #3e393a;
+}
+
+.fs-DarkTheme .gwt-MenuItemSeparator .menuSeparatorInner {
+	border-color: #666;
+}
+
+.fs-DarkTheme .fse-TabButton .html-face {
+    font-size: 13px;
+    color: #797579;
+}
+
+.fs-DarkTheme .fse-TabButton-up .html-face {
+    font-size: 13px;
+    color: #999;
+}
+
+.fs-DarkTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tabs {
+	border: none;	
+}
+
+.fs-DarkTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tab.com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-selected {
+    background: #353030;
+}
+
+.fs-DarkTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tab.com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-selected .fse-TabLabel {
+	color: #797579;
+}
+
+.fs-DarkTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tabInner .fse-TabLabel {
+    color: #454545;
+    font-size: 13px;
+}
+
+.fs-DarkTheme .fse-EditorTabPanel table {
+	border: none;
+}
+
+.fs-DarkTheme .fse-TabController.disabled {
+	color: #4d4d4d;
+}
+
+.fs-DarkTheme .fsc-ShareButton {
+	border: none;
+    background: #494949;
+    color: #999999;
+}
+
+.fs-DarkTheme .fsc-ShareButton:hover {
+    color: #aaaaaa;
+}
+
+/* Cobalt theme */
+.fs-CobaltTheme {
+    background: #002141;
+}
+
+.fs-CobaltTheme .fsc-MeDomainPanel {
+	border: 1px solid #364866;
+}
+
+.fs-CobaltTheme ::-webkit-scrollbar { width: 6px; height: 6px;}
+.fs-CobaltTheme ::-webkit-scrollbar-button {  width: 0px; height: 0px; }
+.fs-CobaltTheme ::-webkit-scrollbar-thumb { background-color: #405371; }
+.fs-CobaltTheme ::-webkit-scrollbar-track-piece { background-color: #002141;}
+
+.fs-CobaltTheme .gwt-MenuBar-horizontal {
+z-index: 9;
+}
+
+.fs-CobaltTheme .fsc-CollaboratorPanel , .fs-CobaltTheme .fsc-ChatButton {
+	border-color: #002141;
+}
+
+.fs-CobaltTheme .fs-Toolbar .fsc-ChatButton {
+	background-color: #002141;	
+	border-color: #002141;
+	color: #436090;
+	transition: none;
+}
+
+.fs-CobaltTheme .fs-Toolbar .fsc-ChatButton:hover {
+    background-color: #212b49;
+    border-color: #212b49 !important;
+    color: #0086f7;
+    background-image: none;
+}
+
+.fs-CobaltTheme .fsc-DocumentName {
+	color: #436090;
+}
+
+.fs-CobaltTheme .fsc-EditableDocumentName:hover {
+    background-color: #212b49;
+    color: #0086f7;
+}
+
+.fs-CobaltTheme .fsc-MenuToolbar, .fs-CobaltTheme .fs-Toolbar {
+    background: #002141;
+	border-color: #364866;
+    box-shadow: none;	
+}
+
+.fs-CobaltTheme .fse-EditorTabPanel .fsc-MenuToolbar, .fs-CobaltTheme .fse-EditorTabPanel .fs-Toolbar {
+    background: #002141;
+	border-color: #364866;
+    box-shadow: none;	
+}
+
+.fs-CobaltTheme .fs-ToolbarDoubleSeparator, .fs-CobaltTheme .fs-ToolbarSeparator  {
+	border-color: #364866;
+}
+
+.fs-CobaltTheme .fs-ToolbarButton {
+	color: #436090;
+}
+
+.fs-CobaltTheme .fs-ToolbarButton:hover {
+	background: #212b49;
+	border-color: #212b49 !important;
+	color: #0086f7;
+}
+
+.fs-CobaltTheme .fs-ToolbarButton-up-disabled {
+    color: #777 !important;
+}
+
+.fs-CobaltTheme .fs-ToolbarButton-up-disabled:hover {
+	background: #333;
+	border-color: #333 !important;
+}
+
+.fs-CobaltTheme .fsc-AppIcon {
+	opacity: 0.5;
+}
+
+.fs-CobaltTheme .fse-UpperPanel, .fs-CobaltTheme .fse-RightPanel, .fs-CobaltTheme .fse-LeftPanel {
+	border-color: #242f50;
+}
+
+.fs-CobaltTheme .ace_editor {
+    border: none;
+}
+
+.fs-CobaltTheme .gwt-MenuItem {
+	background-color: #002141;
+	color: #436090;	
+}
+
+.fs-CobaltTheme .gwt-MenuBar-vertical .gwt-MenuItem {
+	background-color: #242f50;
+	color: #0086f7;
+}
+
+.fs-CobaltTheme .gwt-MenuBar-vertical .gwt-MenuItem-selected {
+	background-color: #242f50;
+	color: #0086f7;
+}
+
+.fs-CobaltTheme .gwt-MenuBar-vertical .gwt-MenuItem-selected:hover {
+	color: #ccc;
+}	
+	
+.fs-CobaltTheme .gwt-MenuItem-selected {
+	background-color: #242f50;
+	color: #0086f7;	
+	border-color: #242f50;
+}
+
+.fs-CobaltTheme .gwt-MenuItem-selected .subMenuIcon-selected {
+	background-color: #242f50;
+	background: #242f50;
+}
+
+.fs-CobaltTheme .gwt-MenuBarPopup {
+	background-color: #242f50;
+	color: #aaa;
+	border-color: #242f50;
+    z-index: 1000;
+}
+
+.fs-CobaltTheme .gwt-MenuItemSeparator {
+	border-color: #364866;
+	background-color: #242f50;
+}
+
+.fs-CobaltTheme .gwt-MenuItemSeparator .menuSeparatorInner {
+	border-color: #364866;
+}
+
+.fs-CobaltTheme .fse-TabButton {
+    opacity: 0.5;
+    transition: all 0s ease-out;
+}
+
+.fs-CobaltTheme .fse-TabButton:hover {
+    opacity: 1;
+}
+
+.fs-CobaltTheme .fse-TabButton .html-face {
+    font-size: 13px;
+    color: #436090;
+}
+
+.fs-CobaltTheme .fse-TabButton-up .html-face {
+    font-size: 13px;
+}
+
+.fs-CobaltTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tabs {
+	border: none;	
+}
+
+.fs-CobaltTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tab.com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-selected {
+	background: #002141;
+}
+
+.fs-CobaltTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tab.com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-selected .fse-TabLabel {
+	color: #4ffaba;
+	opacity: 1;
+}
+
+.fs-CobaltTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tabInner .fse-TabLabel {
+    color: #4ffaba;
+    font-size: 13px;
+    opacity: 0.3;
+}
+
+.fs-CobaltTheme .fse-MimeTypeIcon {
+	color: #436090;
+}
+
+.fs-CobaltTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-tab .fse-MimeTypeIcon {
+    opacity: 0.3;
+}
+
+.fs-CobaltTheme .com-floreysoft-editey-client-InfiniteTabLayoutPanel-TabLayoutPanelStyles-selected .fse-MimeTypeIcon {
+    opacity: 1;
+}
+
+.fs-CobaltTheme .fse-EditorTabPanel table {
+	border: none;
+}
+
+.fs-CobaltTheme .fse-TabController.disabled {
+	color: #4d4d4d;
+}
+
+.fs-CobaltTheme .fsc-ShareButton {
+    background-color: #3865b2;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#3865b2), to(#3460a8));
+    background-image: -webkit-linear-gradient(top, #3865b2, #3460a8);
+    background-image: -moz-linear-gradient(top, #3865b2, #3460a8);
+    background-image: -ms-linear-gradient(top, #3865b2, #3460a8);
+    background-image: -o-linear-gradient(top, #3865b2, #3460a8);
+    background-image: linear-gradient(top, #3865b2, #3460a8);
+    color: #8aa5d4;
+}

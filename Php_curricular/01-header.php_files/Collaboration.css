@@ -1,0 +1,909 @@
+@font-face {
+	font-family: 'icomoon';
+	src: url('fonts/icomoon.eot');
+	src: url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.woff') format('woff'), url('fonts/icomoon.ttf')
+		format('truetype'), url('fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.fs-FilesToolbar {
+	height: 56px; 
+}
+
+.fs-FilesToolbar.fs-FixedToolbar {
+	box-shadow: inset 0px -1px 1px rgba(0,0,0,.25),0px 1px 0px rgba(0,0,0,.15);
+}
+
+.fs-FilesToolbar .fs-Title {
+	line-height: 56px;
+	white-space: nowrap;
+    padding-right: 12px;
+}
+
+.fs-FilesToolbar .fs-SearchBox {
+    position: relative;
+    height: 42px;
+    width: 100%;
+    border: none;
+    padding-left: 12px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-size: 16px;
+    background-color: #ffffffd0;
+    transition: background-color 200ms linear;
+}
+
+.fs-FilesToolbar .fs-SearchBox:focus {
+    background-color: #ffffff;
+}
+
+.fs-FilesToolbar .fs-ButtonSearch {
+    font-size: 18px;
+    height: 42px;
+    padding: 12px 20px;
+    position: relative;
+    width: 60px !important;
+    color: #fff;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+	background-color: #ffffff50;
+	transition: all 200ms linear;
+}
+
+.fs-FilesToolbar .fs-ButtonSearch:hover, .fs-FilesToolbar .fs-ButtonSearch:focus {
+    background-color: #ffffffb0;
+    color: #000;	
+}
+	
+.fs-FilesToolbar .fs-Avatar {
+	border-radius: 50%;
+    position: relative;
+    top: 2px;
+    width: 32px;
+    margin: 6px 16px;
+}
+
+.fs-BackButton, .fs-FolderButton,.fs-LogoButton {
+	font-size: 24px;
+	color: #ffffff;
+	height: 38px;
+    padding: 6px;	
+    border-radius: 2px;
+}
+
+.fs-BackButton {
+    height: 34px;
+   	cursor: pointer;	
+}
+
+.fs-FolderButton {
+    cursor: pointer;	
+    margin: 0 16px;
+}
+
+.fs-FolderButton:hover {
+    background-color: rgba(0,0,0,.2);	
+}
+
+.fs-TableSection {
+	padding-bottom: 0;
+}
+
+.fs-FilesPanel {
+    background-color: #F3F3F3;
+	padding-bottom: 20px;	
+}
+
+.fs-Files {
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-right: 20px;
+}
+
+.fs-Files span {
+	font-size: 14px;
+}
+
+.fs-Files img {
+ 	height: 21px;
+    height: 16px;
+    margin-left: 10px;
+    margin-right: 16px;
+    position: relative;
+    top: 4px;    
+}
+
+.fs-FileName {
+	color: #444;
+	font-size: 14px;	
+	font-weight: 500;
+    position: relative;
+    top: 2px;    	
+    text-decoration: none;    
+}
+
+.fs-FileMetaData {
+    color: #777;
+    position: relative;
+    padding-left: 10px;
+}
+
+.fs-FilesSection {
+    border-bottom: 1px solid #d3d3d3;
+    color: #555555;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 20px 0 10px 2px;
+    margin-bottom: 0;
+}
+
+.fs-FilesSection select.gwt-ListBox {
+    border: none;
+    background: transparent;
+    font-weight: 500;
+    color: #555555;
+}
+
+.fs-FilesRow {
+	border-bottom: 1px solid #e3e3e3;
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+	background-color: #fff;    
+	overflow: auto;    
+ 	padding: 8px;	
+ 	cursor: pointer;
+}
+
+.fs-FilesRow:hover {
+	background-color: #eef6ff;
+}
+
+.fs-Files a {
+    text-decoration: none;
+}
+
+.fs-MessageSection {
+	background-color: white;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,.1);
+    -moz-box-shadow: 0px 1px 3px rgba(0,0,0,.1);
+    box-shadow: 0px 1px 3px rgba(0,0,0,.1);
+    height: 128px;
+    text-align: center;
+    width: 100%;
+	color: #888888;
+    font-size: 16px;
+    padding-top: 48px;
+}
+
+.fs-SectionMoreExamples {
+	padding-top: 20px;	
+}
+
+.fs-MoreButton {
+	text-align: right;
+	cursor: pointer;
+}
+
+.fs-MoreButton:hover {
+	color: #ffffff;
+}
+	
+.fsu-ExampleImage {
+	border: 1px solid #ddd;
+	border-radius: 12px;
+}
+
+.fs-SectionExamples {
+	background-color: #424249 !important;
+	padding-bottom: 0;	
+}
+
+.fs-SectionExamples .grid-pad {
+	padding-bottom: 0;
+}
+
+.fs-SectionExamples img {
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.95;
+}
+
+.fs-SectionExamples img:hover {
+	opacity: 1;
+}
+
+.fs-SectionExamples h2, .fs-SectionExamples h3, .fs-CopyExample h1 {
+	font-family: 'Roboto',sans-serif;
+	-webkit-font-smoothing: antialiased;    
+	color: #E0E0E0;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 16px;
+    margin: 0 0 12px; 	
+	letter-spacing: 0;    
+}
+
+.fs-CopyExample h1 {
+	color: #333;
+}
+
+.fs-ExampleDescription {
+	padding-left: 20px;
+}
+
+.fs-CopyExample .fs-ExampleImage {
+	width: 100px;
+	border-radius: 0;
+	border: 0;	
+}
+
+.fs-SectionExamples h3 {
+	font-size: 16px;
+	margin: 16px 0; 	
+}
+
+.fs-SectionExamples h4 {
+	color: #ffffff;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+ 	margin: 2px 0 24px;
+}
+
+.fs-CopyExample p {
+	margin: 0;		
+}
+
+.fs-Toolbar .fs-ShoppingCart {
+	margin: 0px 8px 2px 6px;
+}
+
+.fsc-SearchBox {
+	border-right: 0px;
+	border-radius: 3px 0px 0px 3px;
+}
+
+.fsc-SearchButton {
+	margin-right: 11px;
+}
+
+.fsc-DialogPrompt {
+	color: #333333;
+	font-weight: bold;
+	padding-left: 3px;
+	padding-top: 6px;
+	padding-bottom: 3px;
+}
+
+.fsc-ResourcePanel {
+	margin: 10px auto 0;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	color: #666;
+	line-height: 16px;
+}
+
+.fsc-ResourcePanel {
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color: #f6f6f6;
+	background-image: -webkit-linear-gradient(top, #fdfdfd, #f6f6f6);
+	background-image: -moz-linear-gradient(top, #fdfdfd, #f6f6f6);
+	background-image: -ms-linear-gradient(top, #fdfdfd, #f6f6f6);
+	background-image: -o-linear-gradient(top, #fdfdfd, #f6f6f6);
+	background-image: linear-gradient(top, #fdfdfd, #f6f6f6);
+}
+
+.fsc-ResourcePanel img {
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-radius: 4px -moz-box-shadow: 3px 3px 3px 0px #CCCCCC;
+	-webkit-box-shadow: 3px 3px 3px 0px #CCCCCC;
+	box-shadow: 3px 3px 3px 0px #CCCCCC;
+	margin: 5px 22px 5px 14px;
+}
+
+.fsc-SaveLabel {
+	color: #6a6a6a;;
+	font-size: 13px;
+	line-height: 31px;
+}
+
+.fsc-TabButton {
+	margin-right: 10px;
+}
+
+.fsc-FileName {
+	font-size: 15px;
+	padding: 8px;
+	margin-right: 6px;
+	color: #222;
+	white-space: nowrap;
+}
+
+.fsc-DocumentName {
+	font-family: arial, sans-serif;
+	font-size: 18px;
+	color: #000;
+	line-height: 16px;
+	display: inline-block;
+	max-width: 99%;
+	outline: none;
+	margin-top: 7px;
+	padding: 5px;
+	white-space: nowrap;
+}
+
+.fsc-EditableDocumentName:hover {
+	background-color: #eee;
+	cursor: pointer;
+}
+
+.fsc-ShareButton .html-face {
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.fsc-MePanel {
+    color: #666;
+    margin-right: 10px;
+    cursor: pointer;
+    outline: none;
+    margin-left: 10px;
+    padding: 4px 8px;
+    line-height: 0;
+}
+
+.fsc-MeDomainPanel {
+	border: 1px solid #d5d5d5;
+    border-radius: 8px;
+}
+
+.fsc-DomainLogo {
+    height: 36px;
+}
+
+.fsc-MePanel .gwt-Image {
+	border-radius: 50%;
+	width: 32px;
+    margin: 2px 0 2px 4px;
+}
+
+.fsc-MeCard {
+	padding: 14px;
+	color: #666;
+	background-color: #fff;
+	width: 100%;
+}
+
+.fsc-MeCard .fs-ButtonSecondary {
+	margin-bottom: 4px;
+}
+
+.fsc-MeCard a {
+	color: #36c;
+	text-decoration: none;
+}
+
+.fsc-MeSeparator {
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .2)),
+		to(rgba(0, 0, 0, 0)));
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, .2),
+		rgba(0, 0, 0, 0));
+	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, .2),
+		rgba(0, 0, 0, 0));
+	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, .2),
+		rgba(0, 0, 0, 0));
+	background-image: -o-linear-gradient(top, rgba(0, 0, 0, .2),
+		rgba(0, 0, 0, 0));
+	background-image: linear-gradient(top, rgba(0, 0, 0, .2),
+		rgba(0, 0, 0, 0));
+	height: 6px;
+}
+
+.fsc-MeToolbar {
+    padding: 8px;
+    background-color: #f5f5f5;
+}
+
+.fsc-MePanel .gwt-Label {
+	font-size: 11px;
+}
+
+.fsc-MePopup .gwt-Image {
+    width: 64px;
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+.fsc-MeDisplayName {
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 7px;
+	padding-top: 4px;
+	color: #000;
+}
+
+.fsc-ChatPanel {
+	margin: 6px 6px 0px 6px;
+	border-radius: 4px 4px 0px 0px;
+	-webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+	background: #fff;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, .2);
+	border-bottom: 0px;
+	outline: none;
+	z-index: 9999;
+}
+
+.fsc-ChatToolbar {
+	border-bottom: 1px solid #ccc;
+	background-color: #fafafa;
+	border-radius: 4px 4px 0px 0px;
+}
+
+.fsc-ChatArea {
+	height: 60px;
+	margin-left: 5px;
+	margin-top: 5px;
+	width: 270px;
+}
+
+.fsc-CollaboratorsCount {
+	padding-left: 10px;
+	padding-right: 6px;
+	color: #333;
+	font-size: 14px;
+}
+
+.fsc-CollaboratorNames,.fsc-ChatDisplayName {
+	max-width: 215px;
+	overflow: hidden;
+	color: #333;
+	font-size: 14px;
+	white-space: nowrap;
+	padding-right: 6px;
+}
+
+.fsc-ChatNotification {
+	font-size: 11px;
+	color: #666;
+	padding-bottom: 3px;
+	padding-left: 43px;
+}
+
+.fsc-ChatDisplayName,.fsc-ChatTimestamp,.fsc-ChatMessage {
+	font-size: 13px;
+}
+
+.fsc-ChatDisplayName {
+	font-weight: bold;
+	color: #333;
+}
+
+.fsc-ChatTimestamp {
+	font-size: 11px;
+	font-weight: bold;
+	color: #333;
+	white-space: nowrap;
+}
+
+.fsc-ChatButton {
+	position: relative;
+    padding: 9px;
+    user-select: none;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #f0f0f0;
+    text-align: center;
+    border: solid 3px #ffffff;    
+	transition: background-color 0.25s ease-in-out;
+}
+
+.fsc-ChatPhoto img {
+	width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.fsc-ChatButton:hover {
+	background-color: #e5e5e5;
+}
+
+.fsc-CollaboratorPanel {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    margin-right: -10px;
+	border-radius: 50%;
+    border: solid 2px #ffffff;
+}
+
+.fsc-CollaboratorPhoto {
+	width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid 3px rgb(0, 0, 0, 0.5);
+}
+
+.fs-Toolbar .fsc-CollaboratorPanel {
+    height: 22px;
+    width: 22px;
+    margin-right: 6px;
+    border-radius: 0;
+    border: none;
+    opacity: 0.5;
+}
+
+.fs-Toolbar .fsc-CollaboratorPhoto {
+    border: none;
+    border-right: 3px solid;
+    border-radius: 0;
+    width: 22px;
+    height: 22px;
+}
+
+.fs-Toolbar .fsc-ChatButton {
+    width: 16px;
+    height: 16px;
+    margin: 1px;
+    padding: 1px;
+    text-align: center;
+    line-height: 14px;
+    border-radius: 2px;
+    background: none;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    outline: none;
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: default;
+}
+
+.fs-Toolbar .fsc-ChatButton:hover {
+    border-color: #c6c6c6 !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    background-color: #f8f8f8;
+    background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+}
+
+.fsc-FontIcon,.fsc-IconButton,.fsc-MenuIcon {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	font-size: 16px;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+.fsc-CommentsScrollPanel {
+	max-height: 450px;
+	padding: 0 29px 0 20px;
+}
+
+.fsc-CommentController,.fsc-MePopup {
+	width: 380px;
+	background: #fff;
+	border: solid 1px #cbcbcb;
+	-moz-box-shadow: -1px 1px 1px rgba(0, 0, 0, .2);
+	-webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+	outline: none;
+}
+
+.fsc-MePopup {
+    background: #fbfbfb;
+    z-index: 999;
+    position: fixed !important;
+}
+
+.fsc-CommentController:before,.fsc-CommentController:after,.fsc-MePopup:before,.fsc-MePopup:after
+	{
+	border: solid transparent;
+	content: ' ';
+	height: 0;
+	width: 0;
+	position: absolute;
+}
+
+.fsc-CommentController:before,.fsc-MePopup:before {
+	border-width: 11px;
+	border-bottom-color: #cbcbcb;
+	left: 300px;
+	top: -22px;
+}
+
+.fsc-CommentController:after,.fsc-MePopup:after {
+	border-width: 10px;
+	border-bottom-color: #f5f5f5;
+	left: 301px;
+	top: -20px;
+}
+
+.fsc-MePopup:after {
+	border-bottom-color: #fff;
+	left: 341px;
+}
+
+.fsc-MePopup:before {
+	left: 340px;
+}
+
+.fsc-CommentControllerToolbar {
+	background-color: #f5f5f5;
+	padding: 10px 29px 10px 20px;
+}
+
+.fsc-AppIcon {
+	color: #fff;
+	font-size: 24px;
+	padding: 17px 9px;
+    cursor: pointer;	
+}
+
+.fsc-MenuIcon {
+	float: left;
+	padding-top: 0px;
+	margin-left: -22px;
+	margin-top: -1px;
+}
+
+.fsc-MenuBar .fs-MenuBar {
+	width: 100%;
+}
+
+.fsc-MenuToolbar {
+    padding: 0px 4px;
+}
+
+.fsc-SubmenuIcon {
+	border-radius: 2px;
+	color: #FFFFFF;
+	float: left;
+	font-size: 16px;
+	height: 16px;
+	line-height: 16px;
+	margin-right: 10px;
+	padding: 3px;
+	position: relative;
+	text-align: center;
+	width: 16px;
+}
+
+.gwt-MenuBarPopup,.fs-DialogBox {
+	z-index: 50;
+}
+
+.gwt-MenuBar {
+	cursor: default;
+}
+
+.gwt-MenuBar-horizontal {
+	height: 36px;
+	margin: 0 24px 0 12px;
+	outline: none;
+	position: relative;
+	z-index: 998;
+}
+
+.gwt-MenuBar-horizontal .gwt-MenuItem {
+	white-space: nowrap;
+	cursor: default;
+	font: 13px Arial, sans-serif;
+	padding: 5px 6px;
+	border: 1px solid transparent;
+	outline: none;
+}
+
+.gwt-MenuBar-horizontal .gwt-MenuItem-selected {
+	border-color: #eee;
+}
+
+.gwt-MenuBar-horizontal .gwt-MenuItem-opened {
+	background: #fff;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, .2);
+	border-bottom: none;
+	color: black;
+	z-index: 999;
+	padding: 5px 6px 6.5px;
+}
+
+.gwt-MenuItem {
+	position: relative;
+	color: #333;
+	cursor: pointer;
+	list-style: none;
+	margin: 0;
+	padding: 6px 8em 6px 30px;
+	white-space: nowrap;
+	line-heigth: 17px;
+}
+
+.gwt-MenuItem-disabled {
+	color: #e0e0e0;
+}
+
+.gwt-MenuItem-selected,.subMenuIcon-selected {
+	background: #eee;
+}
+
+.subMenuIcon-selected {
+	margin-right: 10px;
+}
+
+.subMenuIcon img {
+	position: relative;
+	left: -10px;
+}
+
+.gwt-MenuBar-vertical table {
+	border-collapse: collapse;
+}
+
+.gwt-MenuBar-vertical .menuSeparatorInner {
+	border-top: 1px solid #ebebeb;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.fsc-ImageItem {
+	padding-top: 0px;
+}
+
+.fsc-ImageItem img {
+	margin-left: -27px;
+	margin-right: 7px;
+	position: relative;
+	top: 5px;
+}
+
+.fsc-SubImageItem {
+	padding-top: 3px;
+}
+
+.fsc-SubImageItem img {
+	margin: 3px 10px 3px -20px;
+	position: relative;
+	top: 5px;
+}
+
+.fsc-SubIconItem {
+	padding: 4px 16px;
+	width: 280px;
+}
+
+.gwt-MenuBarPopup {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+	background: #fff;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, .2);
+	cursor: default;
+	font-size: 13px;
+	margin: 0;
+	margin-top: -7px;
+	outline: none;
+	padding: 6px 0;
+	position: absolute
+}
+
+.fsc-SidebarToolbar {
+	background-color: #000;
+	height: 37px;
+}
+
+.fsc-SidebarToolbar .gwt-Label {
+	color: white;
+	font-weight: bold;
+	font-size: 13px;
+	padding-left: 10px;
+}
+
+.fsc-Sidebar {
+	background-color: white;
+}
+
+.fsc-SidebarLeft {
+	border-right: 1px solid #EBEBEB;
+}
+
+.fsc-SidebarRight {
+	border-left: 1px solid #EBEBEB;
+}
+
+.fsc-Sidebar .closeIcon {
+    color: #EEEEEE;
+    cursor: pointer;
+    padding-right: 12px;
+    text-decoration: none;
+}
+
+.fsc-Sidebar .closeIcon:hover {
+    color: #ffffff;
+}
+
+.fsc-RevisionPanel {
+	border-bottom: 1px solid #EBEBEB;
+}
+
+.fsc-RevisionPanel-selected {
+	background-color: #f0f0f0;
+}
+
+.fsc-RevisionPanel:hover {
+	background-color: #f0f0f0;
+}
+
+.fsc-RevisionPicture {
+	width: 28px;
+	height: 28px;
+}
+
+.fsc-RevisionDate {
+	font-size: 13px;
+}
+
+.fsc-RevisionPanel-selected .fsc-RevisionDate {
+	font-weight: bold;
+	color: #d14836;
+}
+
+/* File Picker */
+.fsc-PickerContent {
+	padding: 0 20px;
+}
+
+.fsc-PickerFields {
+	padding-bottom: 10px;
+}
+
+.fsc-PickerFolderName {
+	white-space: nowrap;
+	margin-left: 5px;	
+	position: relative;
+    top: -1px;	
+}
+
+.fsc-PickerSearchBox {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border-right: none;	
+}
+
+.fsc-PickerTreePanel {
+	border: 1px solid #dedede;
+	padding-top: 1px;
+	border-top-left-radius: 3px;	
+	border-bottom-left-radius: 3px;	
+}
+
+.fsc-PickerRowsPanel {
+	border: 1px solid #dedede;
+	-moz-box-sizing: border-box;	
+	box-sizing: border-box;
+	border-top-right-radius: 3px;	
+	border-bottom-right-radius: 3px;	
+}
+	
+.fsc-TreeLoading {
+  animation: blinker 1.7s cubic-bezier(.5, 0, 1, 1) infinite alternate;  
+}
